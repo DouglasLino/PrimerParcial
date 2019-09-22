@@ -78,16 +78,9 @@ p{
     color: #D7DEE6;
     padding: 5px;
 
-}
+} 
 
-/*Lo agrego el colorsito, lo aumento 5em y un margen abajo de 5%
-.big-hero a {
-    color: #0AC693;
-    font-size: 25px;
-    margin-bottom: 5%;
-     
-}
-*/
+
 /* Social links*/
 /*le quito el margin-top pa que se una arriba y se lo pongo al de abajo*/
 .social-links{
@@ -196,6 +189,7 @@ p{
     padding-top: -3.5em;
 }
 
+/*imagen con anchura*/
 .bio-info img{
    width: 200px;
 }
@@ -209,6 +203,7 @@ p{
     letter-spacing: 2px;
 }
 
+ 
 .contact {
     display: flex;
     flex-direction: column;
@@ -225,6 +220,7 @@ p{
     flex-direction: column;
 }
 
+/*al form definimos el padding, sin borde, borde redondito*/
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -256,7 +252,7 @@ p{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-/*define color de fondo y color de letera*/
+/*define color de fondo y color de letra*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
@@ -285,10 +281,17 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
+}
+
+/*al pasar el cursor se pone de color rojo, igual que el de la foto*/
+.menu li a:hover {
+    color: red;
+     
 }
 
 .menu li a {
@@ -336,6 +339,7 @@ footer .social-links {
          
     }  
     
+    /*en la parte de big-hero modifico el margen de arriba y el padding*/
     .big-hero .social-links{
         margin-top: -05em;
         padding: 15px;
@@ -348,7 +352,8 @@ footer .social-links {
     .hide-desktop {
         display: none;
     }
-
+    
+    /**/
     .menu {
         background-color: #112935; 
         position: static;
@@ -364,15 +369,51 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
 } 
+/*al tenes la resolucion 1024 fullachede  aplicara estos estilos*/
 
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
+       /*modifico la parte de big hiro, dandole color, aumentado la fuenta y dandole margen interior*/
+    .big-hero a {
+        color: #0AC693;
+        font-size: 5em;
+        margin-bottom: 5%;
+         
+    }
+    /*modifico la anchura*/
+    .post ul li {
+         
+        min-width: 300px;
+         
+    }
+
+    /*lo manejo con grid, y separo los bloques*/
+    .about .container{
+        display: grid;
+        
+        grid-template-areas: "h2 h2"
+                            "bio-info contact";
+
+    }
+
+    h2{
+        grid-area: h2;
+    }
+    .bio-info{
+        grid-area: bio-info;
+        
+    }
+
+    .contact-form input[type=submit] {
+        width: 50%;
+      }
 
 
 
 }
 
+/*al tenes la resolucion 1440 fullachede 4k aplicara estos estilos*/
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
@@ -381,4 +422,7 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+
+    /*no agregue nada porque con esa resolucion, al
+    parecer me sale ""normal"" 🤷‍♂*/
 }
