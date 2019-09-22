@@ -182,7 +182,9 @@ p{
 /* About */
 
 .about{
-    margin-top: 2em;
+  /*  margin-top: 2em; */
+    padding: 3em;
+    padding-top: 0.5em;
 }
 
 .about h2 {
@@ -190,15 +192,17 @@ p{
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
+    padding-top: -3.5em;
 }
 
 .bio-info img{
    width: 200px;
 }
 
+/*le agrege un poco al padding*/
 .bio-info p{
     font-size: 16px;
-    padding: 2em;
+    
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
