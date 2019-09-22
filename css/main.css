@@ -308,8 +308,9 @@ footer .social-links {
     }
     
     .post ul li {
-        min-height: 350px;
+        min-height: 450px;
         max-height: 3500px;
+        min-width: 450px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
@@ -318,6 +319,26 @@ footer .social-links {
     .logo {
         width: 150px;
         margin: 1.5em;
+    }
+
+    /*modifico el parrafo que se una con el titulo*/
+    .big-hero p {
+        font-size: 0.7em;;
+        color: #D7DEE6;
+        margin-top: -1em;
+    
+    }
+/*le doy color al botton y tamaño*/
+    .big-hero a {
+        color: #0AC693;
+        font-size: 5em;
+        margin-top: -1em;
+         
+    }  
+    
+    .big-hero .social-links{
+        margin-top: -05em;
+        padding: 15px;
     }
 
     .show-desktop {
