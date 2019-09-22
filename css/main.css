@@ -111,7 +111,7 @@ p{
     margin: 10px;
 }
 
-
+/*le damos un colorsito tipo acua*/
 .green-area {
     background-color: #0AC693; 
 }
@@ -132,18 +132,27 @@ p{
     list-style: none;
 }
 
+/*agrege un poco de paddin para que se vea igual que la foto*/
 .post ul li {
+    display: flex;
+    justify-content: center;
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
+     
+     
 }
 
+/*le agregue width y height*/
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    width: 300px;
+    height: 450px;
+    
 }
 
 .post article img{
@@ -167,6 +176,7 @@ p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
+     
 }
 
 /* About */
